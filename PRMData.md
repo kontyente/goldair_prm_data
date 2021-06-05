@@ -1,5 +1,5 @@
 ## PRM Data Exchange
-
+```yaml
 -**id**: {
 	max-length: 8,
 	type: integer,
@@ -169,3 +169,4 @@
 	nillable: true,
 	label: Date in UTC when passenger has been collected at PickUpPoint for outgoing flights,
 }
+```
