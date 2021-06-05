@@ -11,7 +11,7 @@ format: DD/MM/YYYY,
 max-length: 10,
 type: string,
 nillable: false,
-label:Job date, 
+label: Job date, 
 },
 -**smi**: {
 nillable: false, 
