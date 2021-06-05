@@ -1,6 +1,6 @@
 ## PRM Data Exchange
 ```yaml
-id: {
+-**id**: {
 max-length: 8,
 type: integer,
 nillable: false,
