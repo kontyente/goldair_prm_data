@@ -7,95 +7,95 @@ nillable: false,
 label: unique passenger id,
 },
 -**date**: {
-	format: DD/MM/YYYY,
-	max-length: 10,
-	type: string,
-	nillable: false,
-	label:Job date, 
+format: DD/MM/YYYY,
+max-length: 10,
+type: string,
+nillable: false,
+label:Job date, 
 },
 -**smi**: {
-	nillable: false, 
-	max-length: 16, 
-	type: string,
+nillable: false, 
+max-length: 16, 
+type: string,
 	values:{
-		PRM: task created manualy either by dispatcher or by PickUpPoint agents locally,
-		PSM: task created by the airline / origin airport,
-		PAL or CAL: task created by travel agents (mostly used in europe)
-		(also multiple entries possible ex: PSM,CAL,PAL,CAL)
+	PRM: task created manualy either by dispatcher or by PickUpPoint agents locally,
+	PSM: task created by the airline / origin airport,
+	PAL or CAL: task created by travel agents (mostly used in europe)
+	(also multiple entries possible ex: PSM,CAL,PAL,CAL)
 	},
-	label: Type of message sent to the PRM system,
+label: Type of message sent to the PRM system,
 },
 -**ssr**: {
-	nillable: false,
-	max-length: 4,
-	type: string
-	values: {
-		WCHR: Wheelchair Ramp
-		WCHS: Wheelchair Steps
-		WCHC: Wheelchair Carry
-		MAAS: Meet and Assist
-		DEAF: Deaf
-		BLND: Blind
-		DPNA: Intellectual or Developmental Disability
+nillable: false,
+max-length: 4,
+type: string
+values: {
+	WCHR: Wheelchair Ramp
+	WCHS: Wheelchair Steps
+	WCHC: Wheelchair Carry
+	MAAS: Meet and Assist
+	DEAF: Deaf
+	BLND: Blind
+	DPNA: Intellectual or Developmental Disability
 	},
-	label: special service requirements
+label: special service requirements
 },
 -**arr_airline_code**: {
-	nillable: true,
-	max-length: 3,
-	type: string,
-	label: airline code for incoming flights,
+nillable: true,
+max-length: 3,
+type: string,
+label: airline code for incoming flights,
 },
 -**arr_flight_number**: {
-	nillable: true,
-	max-length: 4,
-	type: integer,
-	label: airline flight number for incoming flights
+nillable: true,
+max-length: 4,
+type: integer,
+label: airline flight number for incoming flights
 },
 -**origin_iata_code**: {
-	max-length: 3,
-	type: string,
-	nillable: true,
-	label: iata code from flight origin
+max-length: 3,
+type: string,
+nillable: true,
+label: iata code from flight origin
 },
 -**arr_date**: {
-	label: flight arrival date, 
-	format: dd/mm/yyyy,
-	max-length: 10,
-	type: string,
-	nillable: true
+label: flight arrival date, 
+format: dd/mm/yyyy,
+max-length: 10,
+type: string,
+nillable: true
 },
 -**sta**: {
-	max-length:8,
-	type: string,
-	nillable: true,
-	format: hh:mm:ss,
-	label: local time - scheduled time of arrival
+max-length:8,
+type: string,
+nillable: true,
+format: hh:mm:ss,
+label: local time - scheduled time of arrival
 },
 -**eta**: {
-	label: local time - estimated time of arrival
-	max-length:8,
-	type: string,
-	nillable: true,
-	format: hh:mm:ss
+label: local time - estimated time of arrival
+max-length:8,
+type: string,
+nillable: true,
+format: hh:mm:ss
 },
 -**arr_stand**: {
-	label: Flight parking position of arrival,
-	max-length: 3,
-	type: string,
-	nillable: true 
+label: Flight parking position of arrival,
+max-length: 3,
+type: string,
+nillable: true 
 },
 -**arr_pre_status**: {
-	label: Time range of prenotification from PSM, CAL, PAL messages for arriving passengers,
-	max-length: 4,
-	type: string,
-	nillable: true
+label: Time range of prenotification from PSM, CAL, PAL messages for arriving passengers,
+max-length: 4,
+type: string,
+nillable: true
 },
 -**dep_airline_code**: {
-	nillable: true,
-	max-length: 3,
-	type: string,
-	label: airline code for outgoing flights,
+nillable: true,
+max-length: 3,
+type: string,
+label: airline code for outgoing flights,
 },
 -**dep_flight_number**: {
 	nillable: true,
