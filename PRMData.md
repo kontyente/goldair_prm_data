@@ -1,10 +1,10 @@
 ## PRM Data Exchange
 ```yaml
 -**id**: {
-	max-length: 8,
-	type: integer,
-	nillable: false,
-	label: unique passenger id,
+max-length: 8,
+type: integer,
+nillable: false,
+label: unique passenger id,
 },
 -**date**: {
 	format: DD/MM/YYYY,
