@@ -6,8 +6,8 @@ type: integer,
 nillable: false,
 label: unique passenger id,
 },
--**date**: {
-format: DD/MM/YYYY,
+-**job_date**: {
+format: YYYY-MM-DD,
 max-length: 10,
 type: string,
 nillable: false,
@@ -27,18 +27,25 @@ label: Type of message sent to the PRM system,
 },
 -**ssr**: {
 nillable: false,
-max-length: 4,
-type: string
+max-length: 29,
+type: string,
 values: {
   WCHR: Wheelchair Ramp
   WCHS: Wheelchair Steps
   WCHC: Wheelchair Carry
-  MAAS: Meet and Assist
   DEAF: Deaf
   BLND: Blind
   DPNA: Intellectual or Developmental Disability
+  WCHL: Wheelchair Logistic
+  WCMP: Wheelchair Manual Power
+  WCBD: Wheelchair Battery dry
+  WCBL: Wheelchair Battery Lithium
+  WCBW: Wheelchair Battery Wet
+  BUGY: Child Buggy Service
+  STRC: Strecher Service
+  (also multiple entries possible example worst case scenario: WCHR/DEAF/BLND/DPNA/WCBL/BUGY)
 },
-label: special service requirements
+label: special service requirements definition
 },
 -**arr_airline_code**: {
 nillable: true,
@@ -60,7 +67,7 @@ label: iata code from flight origin
 },
 -**arr_date**: {
 label: flight arrival date, 
-format: dd/mm/yyyy,
+format: YYYY-MM-DD,
 max-length: 10,
 type: string,
 nillable: true
@@ -111,7 +118,7 @@ label: airport of destination IATA-code
 },
 -**dep_date**: {
 label: flight departure date, 
-format: DD/MM/YYYY,
+format: YYYY-MM-DD,
 max-length: 10,
 type: string,
 nillable: true
@@ -161,12 +168,14 @@ example: NO SHOW
 max-length: 55,
 type: string
 nillable: true,
-label: Date in UTC when passenger arrived at PickUpPoint for outgoing flights
+label: Date in UTC when passenger arrived at PickUpPoint for outgoing flights,
+format: YYYY-MM-DDTHH:mm:ss.sssZ
 },
 -**go_br**: {
 max-length: 55,
 type: string,
 nillable: true,
 label: Date in UTC when passenger has been collected at PickUpPoint for outgoing flights,
+format: YYYY-MM-DDTHH:mm:ss.sssZ
 }
 ```
