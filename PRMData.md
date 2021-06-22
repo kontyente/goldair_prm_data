@@ -5,7 +5,7 @@ max-length: 8,
 type: integer,
 nillable: false,
 label: unique passenger id,
-},
+}
 
 -**job_date**: {
 format: YYYY-MM-DD,
@@ -13,7 +13,7 @@ max-length: 10,
 type: string,
 nillable: false,
 label: Job date, 
-},
+}
 
 -**smi**: {
 nillable: false, 
@@ -26,7 +26,7 @@ values:[
   (also multiple entries possible ex: PSM,CAL,PAL,CAL)
   ],
 label: Type of message sent to the PRM system,
-},
+}
 
 -**ssr**: {
 nillable: false,
