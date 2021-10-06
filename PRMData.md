@@ -199,7 +199,7 @@
 }
 
 -**pbrm_d**: {
-  max-length: 21,
+  max-length: 24,
   type: string
   nillable: true,
   label: Date in UTC when passenger arrived at PickUpPoint for outgoing flights,
@@ -207,7 +207,7 @@
 }
 
 -**go_br**: {
-  max-length: 21,
+  max-length: 24,
   type: string,
   nillable: true,
   label: Date in UTC when passenger has been collected at PickUpPoint for outgoing flights,
