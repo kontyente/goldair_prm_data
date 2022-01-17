@@ -23,7 +23,7 @@
     PRM: task created manualy either by dispatcher or by PickUpPoint agents locally,
     PSM: task created by the airline / origin airport,
     PAL or CAL: task created by travel agents (mostly used in europe)
-    (also multiple entries possible ex: PSM,CAL,PAL,CAL)
+    (also multiple entries possible ex: PSM,CAL,PAL,PRM)
     ],
   label: Type of message sent to the PRM system
 }
